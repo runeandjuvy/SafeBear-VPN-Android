@@ -1,0 +1,47 @@
+run command [cartsafebearvpn.cert] run code [# Display help manual
+man openfortivpn
+
+# Connect to a VPN gateway with username
+openfortivpn vpn-gateway:8443 --username=foo
+
+# Connect with username and realm
+openfortivpn vpn-gateway:8443 --username=foo --realm=bar
+
+# Connect with user certificate and key
+openfortivpn vpn-gateway:8443 --username= --password= --user-cert=cert.pem --user-key=key.pem
+
+# Connect using SAML login
+openfortivpn vpn-gateway:8443 --saml-login# Display full help
+ucsf-vpn --help
+
+# Connect to VPN with username and token via push notification
+ucsf-vpn start --user=alice --token=push
+
+# Disconnect from VPN
+ucsf-vpn stop
+
+# Display VPN connection status
+ucsf-vpn status# Display help
+mozillavpn -h
+
+# Activate the VPN tunnel
+mozillavpn activate
+
+# Deactivate the VPN tunnel
+mozillavpn deactivate
+
+# Show the list of servers
+mozillavpn servers
+
+# Show the current VPN status
+mozillavpn status# Connect to VPN
+adguardvpn connect
+
+# Disconnect from VPN
+adguardvpn disconnect
+
+# Show status
+adguardvpn status
+
+# Select server
+adguardvpn server select <server_id>]
